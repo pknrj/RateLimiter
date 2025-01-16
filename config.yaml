@@ -1,0 +1,23 @@
+#token bucket configurations 
+#size of bucket 
+#rate at which the bucket will be filled 
+
+token_bucket:
+  capacity: 20
+  refill_rate: 1
+
+
+#fixed window counter configurations
+#window_duration (window size in seconds) - value should be in seconds 
+#max_requests allowed in this window_duration
+
+fixed_window_counter:
+  window_duration: 12
+  max_requests: 5
+
+
+#sliding window log configuration 
+
+sliding_window_log:
+  window_duration: 10
+  max_requests: 4
